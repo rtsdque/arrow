@@ -118,6 +118,7 @@ def factory(type: Type[Arrow]) -> ArrowFactory:
 
     return ArrowFactory(type)
 
+
 def timezone(tz_str: str) -> dt_tzinfo:
     """Returns a timezone object from a timezone string expression.
 
@@ -132,5 +133,6 @@ def timezone(tz_str: str) -> dt_tzinfo:
 
     """
     return TzinfoParser.parse(tz_str)
+
 
 __all__ = ["get", "utcnow", "now", "factory", "timezone"]

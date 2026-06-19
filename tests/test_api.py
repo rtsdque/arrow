@@ -1,4 +1,6 @@
-import arrow, pytest
+import pytest
+
+import arrow
 
 
 class TestModule:
